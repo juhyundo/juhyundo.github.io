@@ -59,7 +59,7 @@ function setupModal(modalId, buttonId, closeClass) {
 }
 
 // Set up modals
-setupModal("modal4", "btn4", "closeModal4");
+setupModal("modal1", "btn1", "closeModal1");
 setupModal("modal5", "btn5", "closeModal5");
 setupModal("modal6", "btn6", "closeModal6");
 setupModal("modal7", "btn7", "closeModal7");
