@@ -59,10 +59,10 @@ function setupModal(modalId, buttonId, closeClass) {
 }
 
 // Set up modals
+setupModal("modal1", "btn1", "closeModal1");
+setupModal("modal2", "btn2", "closeModal2");
+setupModal("modal3", "btn3", "closeModal3");
 setupModal("modal4", "btn4", "closeModal4");
-setupModal("modal5", "btn5", "closeModal5");
-setupModal("modal6", "btn6", "closeModal6");
-setupModal("modal7", "btn7", "closeModal7");
 setupModal("modalHobby1", "hobbyBtn1", "closeModalHobby1");
 setupModal("modalHobby2", "hobbyBtn2", "closeModalHobby2");
 setupModal("modalHobby3", "hobbyBtn3", "closeModalHobby3");
