@@ -93,8 +93,8 @@ p {
 
 .title-image2 {
   border-radius: 30px;
-  width: 200%;
-  height: 120%;
+  width: 160%;
+  height: 100%;
   object-fit: cover;
   margin-left: -50px;
 }
