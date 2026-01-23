@@ -61,9 +61,9 @@
             <img src="assets/151_datapath.png" alt="" class="title-image2">
           </div>
           <div class="big-container-right" style="">
-            <h3>5 Stage RISC-V CPU with Dirrect Mapped Cache & Branch Prediction and Forwarding in Verilog</h3>
+            <h3>5 Stage RISC-V CPU with Direct Mapped Cache & Branch Prediction and Forwarding in Verilog</h3>
             <p class="time-text">Oct - Dec 2025</p>
-            <p style="padding-bottom: 10px;">Implemented a 5 stage RISC-VCPU datapath. Multiple bypasses implemented with control and forwarding logic to minimize stalls. Got rid of all stall except for hazards of one stall for wrong branch and one stall for jalr after load. Drew FSMs and implemented synchronous direct mapped write-back icache and dcache that interact with external memory with stall flags if the cache is busy. 
+            <p style="padding-bottom: 10px;">Implemented a 5 stage RISC-V CPU datapath. Implemented multiple bypasses to get rid of all stalls except for hazards of one stall for wrong branch prediction, and one stall for data hazard ofjalr after load. Drew FSMs and implemented synchronous direct mapped write-back icache and dcache that interact with external memory with stall flags that stall execution of instructions if either of the cache is busy. 
             </p>
             <button type="button" class="btn btn-outline-success" id="btn1">See more</button>
           </div>
