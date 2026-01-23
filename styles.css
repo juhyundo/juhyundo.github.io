@@ -93,10 +93,10 @@ p {
 
 .title-image2 {
   border-radius: 30px;
-  width: 150%;
-  height: 90%;
+  width: 200%;
+  height: 120%;
   object-fit: cover;
-  margin-left: -20px;
+  margin-left: -50px;
 }
 
 .modal {
