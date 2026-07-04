@@ -22,6 +22,7 @@
     <a href="#top" class="nav__mark">JD<span class="nav__dot">.</span></a>
     <nav class="nav__links" aria-label="Primary">
       <a href="#intro">About</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#beyond">Beyond Work</a>
       <a href="#contact">Contact</a>
@@ -37,7 +38,7 @@
         Juhyun Do
       </h1>
       <p class="hero__lede">
-        I design and build <em>energy-efficient, performant hardware accelerators</em> &mdash; from RISC-V cores in Verilog to silicon at 16nm.
+        Designing and building <em>energy-efficient, performant chips</em> &mdash; from RISC-V processor, VLA accelerators, and PCIe Fabric Switches
       </p>
       <p class="hero__type mono" id="typed" aria-live="polite"></p>
       <div class="hero__meta">
@@ -45,10 +46,16 @@
         <span class="mono">122.2727&deg; W</span>
         <span class="mono">Berkeley, CA</span>
       </div>
-      <a href="#projects" class="hero__scroll" aria-label="Scroll to projects">
-        <span class="mono">scroll</span>
-        <span class="hero__scroll-line" aria-hidden="true"></span>
-      </a>
+      <div class="hero__meta">
+        <span class="mono">35.8353&deg; N</span>
+        <span class="mono">129.2638&deg; E</span>
+        <span class="mono">Gyeongju, South Korea</span>
+      </div>
+      <div class="hero__meta">
+        <span class="mono">24.4666&deg; N</span>
+        <span class="mono">54.3666&deg; E</span>
+        <span class="mono">&nbsp;Abu Dhabi, UAE</span>
+      </div>
     </section>
 
     <!-- ABOUT / INTRO -->
@@ -56,9 +63,9 @@
       <div class="section__label mono">// 01 &mdash; ABOUT</div>
       <div class="about">
         <div class="about__text reveal">
-          <p class="lead">Hi, I'm Juhyun &mdash; a junior at UC Berkeley studying Electrical Engineering &amp; Computer Science.</p>
-          <p>I'm fascinated by the layers between physics and software: how a clock edge becomes a computation, how a floorplan becomes a frequency. Right now I'm taking a 16nm SoC tapeout project (EE&nbsp;194), Computer Architecture (CS&nbsp;152), and Advanced Digital Design &amp; Integrated Circuits (EECS&nbsp;251B).</p>
-          <p>Earlier coursework: Digital Design &amp; Integrated Circuits (151), ASIC Lab (151LA), Intro to Machine Learning (CS&nbsp;189), Optimization Models in Engineering (EECS&nbsp;127), and Great Ideas of Computer Architecture (CS&nbsp;61C).</p>
+          <p class="lead">Hi, I'm Juhyun &mdash; rising senior at UC Berkeley studying Electrical Engineering &amp; Computer Science.</p>
+          <p>Ever since reading Chip War and having fun working on CS61CPU project, I've been interested in learning more about how chips are designed and how to make them more efficient, with my background interests in energy. At Berkeley, I've taken classes like Tapeout IC Design Project - 16nm SoC (EE 194), Computer Architecture (CS 152), Advanced Digial Design and Integrated Circuits (EECS 251B), Digital Design and Integrated Circuits (151), 
+            ASIC lab (151LA), Intro to Machine Learning (CS 189), Optimization Models in Engineering (EECS 127), and Great Ideas of Computer Architecture (CS 61C).</p>
           <p>I'm excited to see where my love for learning &mdash; and for making an impact &mdash; takes me next.</p>
         </div>
         <div class="about__aside reveal">
@@ -69,28 +76,73 @@
             <div><dt class="mono">FOCUS</dt><dd>Hardware accelerators</dd></div>
             <div><dt class="mono">TOOLS</dt><dd>Verilog &middot; VCS &middot; Genus &middot; Innovus</dd></div>
             <div><dt class="mono">LANGS</dt><dd>Korean &middot; English &middot; French</dd></div>
-            <div><dt class="mono">OFF-HOURS</dt><dd>Books &middot; ping-pong &middot; running &middot; sunsets</dd></div>
+            <div><dt class="mono">OFF-HOURS</dt><dd>Books &middot; ping-pong &middot; running &middot; cooking</dd></div>
           </dl>
         </div>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section__label mono">// 02 &mdash; EXPERIENCE</div>
+      <ol class="jobs">
+
+        <li class="job reveal">
+          <div class="job__meta">
+            <span class="job__time mono">May 2026 &ndash; Aug 2026</span>
+            <span class="job__company mono">Astera Labs</span>
+          </div>
+          <div class="job__body">
+            <h3 class="job__role">Digital Design Engineer Intern </h3>
+            <p class="job__desc"> - Optimizing the design of flagship Scorpio PCIe Switch Series
+              <br> - Refined Design Infrastructure and Regression Runs By Parallelizing Partition Runs Within a Design Block</p>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job__meta">
+            <span class="job__time mono">Oct 2025 &ndash; Ongoing</span>
+            <span class="job__company mono">Berkeley Wireless Research Center</span>
+          </div>
+          <div class="job__body">
+            <h3 class="job__role">Undergraduate Researcher</h3>
+            <p class="job__desc">Improving dependency management in Hammer PD framework. Showcased in ISCA 2026 Workshop.
+            </p>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job__meta">
+            <span class="job__time mono">June 2025 &ndash; July 2025</span>
+            <span class="job__company mono">POSTECH CAD & SoC Design Lab</span>
+          </div>
+          <div class="job__body">
+            <h3 class="job__role">Research Intern</h3>
+            <p class="job__desc">Learn about EDA algorithms, solved a two layer routing problem using A* algorithm and approximation of Steiner tree, reducing total HPWL by
+              27.6% while improving runtime by 3 folds compared to naiive solution of routing through each node.
+            </p>
+          </div>
+        </li>
+
+      </ol>
+    </section>
+
     <!-- PROJECTS -->
     <section class="section" id="projects">
-      <div class="section__label mono">// 02 &mdash; PROJECTS &mdash; recent to early</div>
+      <div class="section__label mono">// 03 &mdash; PROJECTS &mdash; recent to early</div>
 
       <ol class="projects">
 
         <li class="project reveal" data-index="01">
           <button class="project__open" data-modal="modal1">
             <div class="project__media">
-              <img src="assets/151_datapath.png" alt="5-stage RISC-V CPU datapath" loading="lazy">
+              <img src="assets/Tapeout2.png" alt="NPU quantization architecture: BF16-to-FP8 datapath" loading="lazy">
             </div>
             <div class="project__body">
               <span class="project__num mono">01</span>
-              <span class="project__time mono">Oct &ndash; Dec 2025</span>
-              <h3 class="project__title">5-Stage RISC-V CPU &mdash; Direct-Mapped Cache, Branch Prediction &amp; Forwarding</h3>
-              <p class="project__desc">A pipelined RISC-V datapath in Verilog. Bypass logic eliminates nearly all stalls; synchronous direct-mapped write-back I/D caches interact with external memory under busy-stall flags. Placed 8th of 38 teams on figure of merit.</p>
+              <span class="project__time mono">Jan &ndash; May 2026</span>
+              <h3 class="project__title">EE 194 Berkeley ASIC Tapeout Class &mdash; Accelerator Design for VLA Applications</h3>
+              <p class="project__desc">Designed a BF16&rarr;FP8 quantization scheme for a matrix-multiply accelerator built to run VLA (vision-language-action) models on-chip, .</p>
               <span class="project__cta mono">read more &rarr;</span>
             </div>
           </button>
@@ -99,13 +151,13 @@
         <li class="project reveal" data-index="02">
           <button class="project__open" data-modal="modal2">
             <div class="project__media">
-              <img src="assets/189_stage2.png" alt="LLM fine-tuning results" loading="lazy">
+              <img src="assets/151_datapath.png" alt="5-stage RISC-V CPU datapath" loading="lazy">
             </div>
             <div class="project__body">
               <span class="project__num mono">02</span>
-              <span class="project__time mono">Nov 2025</span>
-              <h3 class="project__title">Fine-Tuning an LLM to Solve CS 189 MCQs</h3>
-              <p class="project__desc">Dual-stage mixed fine-tuning of Qwen2.5-0.5B-Instruct to tackle Berkeley's Intro-to-ML problems while resisting catastrophic forgetting. Reached ~42.5% accuracy on 169 held-out questions, up from ~28%.</p>
+              <span class="project__time mono">Oct &ndash; Dec 2025</span>
+              <h3 class="project__title">5-Stage RISC-V CPU &mdash; Direct-Mapped Cache, Branch Prediction &amp; Forwarding</h3>
+              <p class="project__desc">A pipelined RISC-V datapath in Verilog. Bypass logic eliminates nearly all stalls; synchronous direct-mapped write-back I/D caches interact with external memory under busy-stall flags. Placed 8th of 38 teams on figure of merit.</p>
               <span class="project__cta mono">read more &rarr;</span>
             </div>
           </button>
@@ -114,13 +166,13 @@
         <li class="project reveal" data-index="03">
           <button class="project__open" data-modal="modal3">
             <div class="project__media">
-              <img src="assets/Steiner.png" alt="Steiner tree routing" loading="lazy">
+              <img src="assets/189_stage2.png" alt="LLM fine-tuning results" loading="lazy">
             </div>
             <div class="project__body">
               <span class="project__num mono">03</span>
-              <span class="project__time mono">May &ndash; Jun 2025</span>
-              <h3 class="project__title">Two-Layer Rectilinear Routing</h3>
-              <p class="project__desc">An A*-driven router with Steiner-tree approximation that cut total half-perimeter wirelength by 27.6% while running 3&times; faster than the baseline.</p>
+              <span class="project__time mono">Nov 2025</span>
+              <h3 class="project__title">Fine-Tuning an LLM to Solve CS 189 MCQs</h3>
+              <p class="project__desc">Dual-stage mixed fine-tuning of Qwen2.5-0.5B-Instruct to tackle Berkeley's Intro-to-ML problems while resisting catastrophic forgetting. Reached ~42.5% accuracy on 169 held-out questions, up from ~28%.</p>
               <span class="project__cta mono">read more &rarr;</span>
             </div>
           </button>
@@ -129,13 +181,13 @@
         <li class="project reveal" data-index="04">
           <button class="project__open" data-modal="modal4">
             <div class="project__media">
-              <img src="assets/CS61CPU.png" alt="32-bit RISC-V CPU in Logisim" loading="lazy">
+              <img src="assets/Steiner.png" alt="Steiner tree routing" loading="lazy">
             </div>
             <div class="project__body">
               <span class="project__num mono">04</span>
-              <span class="project__time mono">Mar &ndash; Apr 2025</span>
-              <h3 class="project__title">32-bit RISC-V CPU</h3>
-              <p class="project__desc">A from-scratch RISC-V processor in Logisim: ALU, control logic, immediate generator, 2-stage pipelining, and data-hazard handling.</p>
+              <span class="project__time mono">May &ndash; Jun 2025</span>
+              <h3 class="project__title">Two-Layer Rectilinear Routing</h3>
+              <p class="project__desc">An A*-driven router with Steiner-tree approximation that cut total half-perimeter wirelength by 27.6% while running 3&times; faster than the baseline.</p>
               <span class="project__cta mono">read more &rarr;</span>
             </div>
           </button>
@@ -144,10 +196,25 @@
         <li class="project reveal" data-index="05">
           <button class="project__open" data-modal="modal5">
             <div class="project__media">
-              <img src="assets/Classify Title.png" alt="Digit classification in RISC-V" loading="lazy">
+              <img src="assets/CS61CPU.png" alt="32-bit RISC-V CPU in Logisim" loading="lazy">
             </div>
             <div class="project__body">
               <span class="project__num mono">05</span>
+              <span class="project__time mono">Mar &ndash; Apr 2025</span>
+              <h3 class="project__title">32-bit RISC-V CPU</h3>
+              <p class="project__desc">A from-scratch RISC-V processor in Logisim: ALU, control logic, immediate generator, 2-stage pipelining, and data-hazard handling.</p>
+              <span class="project__cta mono">read more &rarr;</span>
+            </div>
+          </button>
+        </li>
+
+        <li class="project reveal" data-index="06">
+          <button class="project__open" data-modal="modal6">
+            <div class="project__media">
+              <img src="assets/Classify Title.png" alt="Digit classification in RISC-V" loading="lazy">
+            </div>
+            <div class="project__body">
+              <span class="project__num mono">06</span>
               <span class="project__time mono">Feb 2025</span>
               <h3 class="project__title">Digit Classification in RISC-V</h3>
               <p class="project__desc">A handwritten-digit classifier written in pure RISC-V assembly &mdash; MatrixMul, ReLU, ArgMax, and Classify built by hand.</p>
@@ -161,8 +228,8 @@
 
     <!-- BEYOND WORK -->
     <section class="section" id="beyond">
-      <div class="section__label mono">// 03 &mdash; BEYOND WORK</div>
-      <p class="section__intro reveal">When I'm not chasing clock cycles, you'll find me reading, playing ping-pong, running, or watching the sun set over the Bay.</p>
+      <div class="section__label mono">// 04 &mdash; BEYOND WORK</div>
+      <p class="section__intro reveal">In my free time, you'll find me reading, playing ping-pong, running, cooking, or watching the sun set!</p>
 
       <div class="hobbies">
         <button class="hobby reveal" data-modal="modalHobby1">
@@ -194,10 +261,9 @@
 
     <!-- CONTACT -->
     <section class="section section--contact" id="contact">
-      <div class="section__label mono">// 04 &mdash; CONTACT</div>
+      <div class="section__label mono">// 05 &mdash; CONTACT</div>
       <div class="contact reveal">
-        <h2 class="contact__title">Let's build something.</h2>
-        <p class="contact__lede">I'd love to connect &mdash; reach me on any of these.</p>
+        <p class="section__intro reveal">I'd love to connect! <br> Feel free to reach me out on: </p>
         <div class="contact__links">
           <a href="mailto:juhyundo@berkeley.edu" class="contact__link">
             <span class="mono">01</span> Email <span class="contact__arrow">&rarr;</span>
@@ -205,17 +271,14 @@
           <a href="https://www.linkedin.com/in/juhyun-do-49a75a20b/" target="_blank" rel="noopener noreferrer" class="contact__link">
             <span class="mono">02</span> LinkedIn <span class="contact__arrow">&rarr;</span>
           </a>
-          <a href="https://www.instagram.com/juhyund019/" target="_blank" rel="noopener noreferrer" class="contact__link">
-            <span class="mono">03</span> Instagram <span class="contact__arrow">&rarr;</span>
-          </a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <span class="mono">&copy; 2026 Juhyun Do</span>
-    <span class="mono">designed &amp; built in Berkeley, CA</span>
+    <span class="mono">Juhyun Do</span>
+    <span class="mono">Updated July 3rd, 2026</span>
   </footer>
 
   <!-- ============ MODALS ============ -->
@@ -225,7 +288,26 @@
     <div class="modal" id="modal1" role="dialog" aria-modal="true" aria-labelledby="modal1-title">
       <div class="modal__panel">
         <button class="modal__close" aria-label="Close">&times;</button>
-        <h2 class="modal__title" id="modal1-title">5-Stage RISC-V CPU with Direct-Mapped Cache, Branch Prediction &amp; Forwarding</h2>
+        <h2 class="modal__title" id="modal1-title">EE 194 Berkeley ASIC Tapeout Class &mdash; Accelerator Design for VLA Applications</h2>
+        <div class="gallery" data-gallery>
+          <img src="assets/Tapeout2.png" alt="Quantization datapath" class="is-active">
+          <img src="assets/Tapeout1.png" alt="Quantization approach">
+          <img src="assets/Tapeout0.png" alt="Verification infrastructure">
+          <img src="assets/Tapeout3.png" alt="Physical layout">
+          <button class="gallery__nav gallery__prev" aria-label="Previous">&larr;</button>
+          <button class="gallery__nav gallery__next" aria-label="Next">&rarr;</button>
+          <div class="gallery__dots"></div>
+        </div>
+        <p>Contributed to accelerator design for VLA (vision-language-action) models. Worked on BF16&rarr;FP8 quantization scheme (Max-PO2 per-tensor scaling) for the matrix engines (MXU) and vector unit, and built PyTorch-based RTL-matched functional models to evaluate RTL and support cross-engine ablation testing. Carried the design through place-and-route in Cadence Innovus to a completed tapeout.</p>
+        <p class="modal__skills mono">Quantization &middot; BF16/FP8 &middot; RTL Modeling &middot; PyTorch &middot; ASIC Tapeout</p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="modal" id="modal2" role="dialog" aria-modal="true" aria-labelledby="modal2-title">
+      <div class="modal__panel">
+        <button class="modal__close" aria-label="Close">&times;</button>
+        <h2 class="modal__title" id="modal2-title">5-Stage RISC-V CPU with Direct-Mapped Cache, Branch Prediction &amp; Forwarding</h2>
         <div class="gallery" data-gallery>
           <img src="assets/151_datapath.png" alt="Datapath" class="is-active">
           <img src="assets/151_layout.png" alt="Layout">
@@ -240,11 +322,11 @@
       </div>
     </div>
 
-    <!-- Project 2 -->
-    <div class="modal" id="modal2" role="dialog" aria-modal="true" aria-labelledby="modal2-title">
+    <!-- Project 3 -->
+    <div class="modal" id="modal3" role="dialog" aria-modal="true" aria-labelledby="modal3-title">
       <div class="modal__panel">
         <button class="modal__close" aria-label="Close">&times;</button>
-        <h2 class="modal__title" id="modal2-title">Fine-Tuning an LLM to Solve CS 189 MCQs</h2>
+        <h2 class="modal__title" id="modal3-title">Fine-Tuning an LLM to Solve CS 189 MCQs</h2>
         <div class="gallery" data-gallery>
           <img src="assets/189_dataset.png" alt="Dataset" class="is-active">
           <img src="assets/189_stage2.png" alt="Stage 2">
@@ -258,11 +340,11 @@
       </div>
     </div>
 
-    <!-- Project 3 -->
-    <div class="modal" id="modal3" role="dialog" aria-modal="true" aria-labelledby="modal3-title">
+    <!-- Project 4 -->
+    <div class="modal" id="modal4" role="dialog" aria-modal="true" aria-labelledby="modal4-title">
       <div class="modal__panel">
         <button class="modal__close" aria-label="Close">&times;</button>
-        <h2 class="modal__title" id="modal3-title">Two-Layer Rectilinear Routing Problem</h2>
+        <h2 class="modal__title" id="modal4-title">Two-Layer Rectilinear Routing Problem</h2>
         <div class="gallery" data-gallery>
           <img src="assets/Naiive.png" alt="Naive approach" class="is-active">
           <img src="assets/Steiner.png" alt="Steiner tree">
@@ -277,11 +359,11 @@
       </div>
     </div>
 
-    <!-- Project 4 -->
-    <div class="modal" id="modal4" role="dialog" aria-modal="true" aria-labelledby="modal4-title">
+    <!-- Project 5 -->
+    <div class="modal" id="modal5" role="dialog" aria-modal="true" aria-labelledby="modal5-title">
       <div class="modal__panel">
         <button class="modal__close" aria-label="Close">&times;</button>
-        <h2 class="modal__title" id="modal4-title">32-bit RISC-V CPU</h2>
+        <h2 class="modal__title" id="modal5-title">32-bit RISC-V CPU</h2>
         <div class="gallery" data-gallery>
           <img src="assets/CPU ALU.png" alt="ALU" class="is-active">
           <img src="assets/CPU Control Logic.png" alt="Control logic">
@@ -295,11 +377,11 @@
       </div>
     </div>
 
-    <!-- Project 5 -->
-    <div class="modal" id="modal5" role="dialog" aria-modal="true" aria-labelledby="modal5-title">
+    <!-- Project 6 -->
+    <div class="modal" id="modal6" role="dialog" aria-modal="true" aria-labelledby="modal6-title">
       <div class="modal__panel">
         <button class="modal__close" aria-label="Close">&times;</button>
-        <h2 class="modal__title" id="modal5-title">Digit Classification in RISC-V</h2>
+        <h2 class="modal__title" id="modal6-title">Digit Classification in RISC-V</h2>
         <div class="gallery" data-gallery>
           <img src="assets/Classify RISC.png" alt="Classify in RISC-V" class="is-active">
           <img src="assets/Classify test.png" alt="Test results">
@@ -326,7 +408,7 @@
           <button class="gallery__nav gallery__next" aria-label="Next">&rarr;</button>
           <div class="gallery__dots"></div>
         </div>
-        <p>Some favorites: <em>Why Fish Don't Exist</em>, <em>Justice</em>, <em>Pachinko</em>, and <em>Why Nations Fail</em>. My love of technology led me to <em>Chip War</em>, <em>The Coming Wave</em>, and <em>The Code Breaker</em> &mdash; books that made me realize the transformative power of AI, semiconductors, and synthetic biology shaping humanity's next stage.</p>
+        <p>Some favorites: <em>Why Fish Don't Exist</em>, <em>Justice</em>, <em>Pachinko</em>, and <em>Why Nations Fail</em>. My passion in technology led me to read <em>Chip War</em>, <em>The Coming Wave</em>, and <em>The Code Breaker</em> &mdash; books that made me realize the transformative power of AI, semiconductors, and CRISPR, shaping the next stage of humanity.</p>
       </div>
     </div>
 

@@ -196,6 +196,33 @@ em { font-style: italic; color: var(--accent); }
 .spec dt { margin: 0; }
 .spec dd { margin: 0; font-size: 0.95rem; }
 
+/* EXPERIENCE -------------------------------------------------- */
+.jobs { list-style: none; margin: 0; padding: 0; }
+
+.job {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  padding: 1.8rem 0;
+  border-top: 1px solid var(--hairline);
+  align-items: start;
+  transition: padding-left 0.4s var(--ease);
+}
+.job:last-child { border-bottom: 1px solid var(--hairline); }
+.job:hover { padding-left: 1.2rem; }
+
+.job__meta { display: flex; flex-direction: column; gap: 0.4rem; padding-top: 0.2rem; }
+.job__company { color: var(--accent); }
+
+.job__role {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(1.1rem, 2vw, 1.4rem); letter-spacing: -0.02em;
+  margin: 0 0 0.6rem; color: var(--ink);
+  transition: color 0.3s var(--ease);
+}
+.job:hover .job__role { color: var(--accent); }
+.job__desc { margin: 0; color: var(--graphite); font-size: 1rem; max-width: 60ch; }
+
 /* PROJECTS ---------------------------------------------------- */
 .projects { list-style: none; margin: 0; padding: 0; }
 .project { border-top: 1px solid var(--hairline); }
@@ -373,6 +400,7 @@ em { font-style: italic; color: var(--accent); }
 /* RESPONSIVE -------------------------------------------------- */
 @media (max-width: 820px) {
   .about { grid-template-columns: 1fr; }
+  .job { grid-template-columns: 1fr; gap: 0.5rem; }
   .project .project__open { grid-template-columns: 1fr; gap: 1.2rem; }
   .project__media img { aspect-ratio: 16/9; }
   .hobbies { grid-template-columns: repeat(2, 1fr); }

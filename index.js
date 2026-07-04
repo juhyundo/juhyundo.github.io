@@ -6,10 +6,7 @@
 
   /* ---- Typewriter tagline ---------------------------------- */
   var phrases = [
-    'Avid learner & critical thinker.',
-    'Chasing clock cycles & clean abstractions.',
-    'From transistors to transformers.',
-    'Building hardware that thinks.'
+    'Avid Learner & Critical Thinker.',
   ];
   var typedEl = document.getElementById('typed');
   if (typedEl && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
